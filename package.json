@@ -1,0 +1,17 @@
+{
+  "name": "html5-form-validator",
+  "version": "0.0.1",
+  "description": "The most simple HTML5 form validator",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scriptex/html5-form-validator.git"
+  },
+  "keywords": ["HTML5", "form", "validator"],
+  "author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://github.com/scriptex)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scriptex/html5-form-validator/issues"
+  },
+  "homepage": "https://github.com/scriptex/html5-form-validator#readme"
+}

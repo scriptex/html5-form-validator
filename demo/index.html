@@ -45,7 +45,7 @@
           } else {
             if (typeof this.settings.submitHandler === 'function') {
               event.preventDefault();
-              
+
               this.settings.submitHandler(this);
             }
           }
@@ -66,13 +66,13 @@
         field.oninvalid = () => {
           field.classList.add(this.settings.invalidClass);
           field.nextSibling.textContent = field.validationMessage;
-        }
+        };
 
         field.oninput = () => {
           field.nextSibling.textContent = '';
           field.classList.remove(this.settings.invalidClass);
           field.checkValidity();
-        }
+        };
       }
     }
   </script>

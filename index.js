@@ -28,7 +28,7 @@ export default class html5formValidation {
       } else {
         if (typeof this.settings.submitHandler === 'function') {
           event.preventDefault();
-          
+
           this.settings.submitHandler(this);
         }
       }
@@ -49,13 +49,12 @@ export default class html5formValidation {
     field.oninvalid = () => {
       field.classList.add(this.settings.invalidClass);
       field.nextSibling.textContent = field.validationMessage;
-    }
+    };
 
     field.oninput = () => {
       field.nextSibling.textContent = '';
       field.classList.remove(this.settings.invalidClass);
       field.checkValidity();
-    }
+    };
   }
-}
 }
