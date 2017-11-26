@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <title>HTML5 form validator</title>
+</head>
+<body>
+  <form>
+    <input type="number" value="" placeholder="Enter 42" min="42" max="42" required>
+    <input type="email" placeholder="Enter your email" required>
+    <button type="submit">Register</button>
+  </form>
+
+  <script>
+    class html5formValidation {
+      constructor(element = document.querySelector('form'), settings = {}) {
+        this.settings = Object.assign(
+          {},
+          {
+            errorElement: 'error',
+            invalidClass: 'invalid',
+            submitHandler: null,
+            validateOnInput: true
+          },
+          settings
+        );
+        this.form = element;
+        this.errorDiv = `<div class="${this.settings.errorElement}"></div>`;
+
+        this.init();
+      }
+
+      init() {
+        this.form.noValidate = true;
+        this.settings.validateOnInput && this.validateAll(this.form);
+
+        this.form.onsubmit = event => {
+          this.validateAll(this.form);
+
+          if (!this.form.checkValidity()) {
+            event.preventDefault();
+          } else {
+            if (typeof this.settings.submitHandler === 'function') {
+              event.preventDefault();
+              
+              this.settings.submitHandler(this);
+            }
+          }
+        };
+      }
+
+      validateAll(form) {
+        const requiredFields = form.querySelectorAll('[required]');
+
+        for (const field of requiredFields) {
+          this.validateField(field);
+        }
+      }
+
+      validateField(field) {
+        field.insertAdjacentHTML('afterend', this.errorDiv);
+
+        field.oninvalid = () => {
+          field.classList.add(this.settings.invalidClass);
+          field.nextSibling.textContent = field.validationMessage;
+        }
+
+        field.oninput = () => {
+          field.nextSibling.textContent = '';
+          field.classList.remove(this.settings.invalidClass);
+          field.checkValidity();
+        }
+      }
+    }
+  </script>
+
+  <script>
+    new html5formValidation()
+  </script>
+</body>
+</html>
