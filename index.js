@@ -44,7 +44,14 @@ export default class html5formValidation {
   }
 
   validateField(field) {
-    field.insertAdjacentHTML('afterend', this.errorDiv);
+    if (
+      !(
+        field.nextSibling.classList &&
+        field.nextSibling.classList.contains(this.settings.errorElement)
+      )
+    ) {
+      field.insertAdjacentHTML('afterend', this.errorDiv);
+    }
 
     field.oninvalid = () => {
       field.classList.add(this.settings.invalidClass);
