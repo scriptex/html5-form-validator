@@ -1,6 +1,6 @@
 {
   "name": "html5-form-validator",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "The most simple HTML5 form validator",
   "main": "index.js",
   "repository": {
