@@ -10,12 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/scriptex/html5-form-validator.git"
   },
-  "keywords": [
-    "HTML5",
-    "form",
-    "validator"
-  ],
-  "author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://github.com/scriptex)",
+  "keywords": ["HTML5", "form", "validator"],
+  "author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/scriptex/html5-form-validator/issues"

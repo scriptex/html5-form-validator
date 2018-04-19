@@ -58,3 +58,7 @@ new html5formValidation(form, {
 `submitHandler` - A function to run on valid form submission. Accepts a single `instance` argument which refers to the constuctor's instance. Defaults to `null`.
 
 `validateOnInput` - Set to false if you want to show visual feedback for invalid fields after the first invalid submission. Defaults to `true`.
+
+## LICENSE
+
+MIT
