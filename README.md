@@ -1,3 +1,11 @@
+[![GitHub stars](https://img.shields.io/github/stars/scriptex/html5-form-validator.svg?style=social&label=Stars)](https://github.com/scriptex/html5-form-validator)
+[![npm](https://img.shields.io/npm/dt/html5-form-validator.svg)](https://www.npmjs.com/package/html5-form-validator)
+[![npm](https://img.shields.io/npm/v/html5-form-validator.svg)](https://www.npmjs.com/package/html5-form-validator)
+[![GitHub issues](https://img.shields.io/github/issues/scriptex/html5-form-validator.svg)](https://github.com/scriptex/html5-form-validator)
+[![GitHub last commit](https://img.shields.io/github/last-commit/scriptex/html5-form-validator.svg)](https://github.com/scriptex/html5-form-validator)
+[![license](https://img.shields.io/github/license/scriptex/html5-form-validator.svg)](https://github.com/scriptex/html5-form-validator)
+[![Github file size](https://img.shields.io/github/size/scriptex/html5-form-validator/dist/index.min.js.svg)](https://github.com/scriptex/html5-form-validator)
+
 # HTML5 Form Validator
 
 The most simple HTML5 forms validator
