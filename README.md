@@ -9,11 +9,9 @@
 [![license](https://img.shields.io/github/license/scriptex/html5-form-validator.svg)](https://github.com/scriptex/html5-form-validator)
 [![Analytics](https://ga-beacon.appspot.com/UA-83446952-1/github.com/scriptex/html5-form-validator/README.md)](https://github.com/scriptex/html5-form-validator/)
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/scriptex/html5-form-validator/)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/scriptex/html5-form-validator/webpack.config.js/graphs/commit-activity)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/scriptex/html5-form-validator/graphs/commit-activity)
 
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/scriptex/)
-[![ForTheBadge powered-by-electricity](http://ForTheBadge.com/images/badges/powered-by-electricity.svg)](http://ForTheBadge.com)
-[![ForTheBadge winter-is-coming](http://ForTheBadge.com/images/badges/winter-is-coming.svg)](http://ForTheBadge.com)
 
 # HTML5 Form Validator
 
