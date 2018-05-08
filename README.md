@@ -19,13 +19,13 @@ The most simple HTML5 forms validator
 
 ## Install
 
-```
+```console
 npm i html5-form-validator
 ```
 
 or
 
-```
+```console
 yarn add html5-form-validator
 ```
 
@@ -35,19 +35,19 @@ Just download this repository and link the files located in dist folder.
 
 ## Usage
 
-```
+```javascript
 import 'html5-form-validator';
 ```
 
 Then initialize with default settings:
 
-```
+```javascript
 new html5formValidation();
 ```
 
 or supply your own
 
-```
+```javascript
 const form = document.querySelector('#form');
 
 new html5formValidation(form, {
