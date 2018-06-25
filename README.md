@@ -15,7 +15,7 @@
 
 # HTML5 Form Validator
 
-The most simple HTML5 forms validator
+The simplest HTML5 forms validator
 
 ## Install
 
