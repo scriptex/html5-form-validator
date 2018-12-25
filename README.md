@@ -6,7 +6,6 @@
 [![npm](https://img.shields.io/npm/dt/html5-form-validator.svg)](https://www.npmjs.com/package/html5-form-validator)
 [![npm](https://img.shields.io/npm/v/html5-form-validator.svg)](https://www.npmjs.com/package/html5-form-validator)
 [![Analytics](https://ga-beacon.appspot.com/UA-83446952-1/github.com/scriptex/html5-form-validator/README.md)](https://github.com/scriptex/html5-form-validator/)
-[![Greenkeeper badge](https://badges.greenkeeper.io/scriptex/html5-form-validator.svg)](https://greenkeeper.io/)
 
 # HTML5 Form Validator
 
