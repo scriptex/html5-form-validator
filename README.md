@@ -13,13 +13,13 @@ The simplest HTML5 forms validator
 
 ## Install
 
-```console
+```sh
 npm i html5-form-validator
 ```
 
 or
 
-```console
+```sh
 yarn add html5-form-validator
 ```
 
