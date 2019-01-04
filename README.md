@@ -25,7 +25,13 @@ yarn add html5-form-validator
 
 or
 
-Just download this repository and link the files located in dist folder.
+just download this repository and link the files located in dist folder
+
+or include it from unpkg.com
+
+```html
+<script src="https://unpkg.com/html5-form-validator"></script>
+```
 
 ## Usage
 
