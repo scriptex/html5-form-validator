@@ -2,7 +2,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/scriptex/html5-form-validator.svg)](https://github.com/scriptex/html5-form-validator/issues)
 [![GitHub last commit](https://img.shields.io/github/last-commit/scriptex/html5-form-validator.svg)](https://github.com/scriptex/html5-form-validator/commits/master)
 [![Github file size](https://img.shields.io/github/size/scriptex/html5-form-validator/dist/index.min.js.svg)](https://github.com/scriptex/html5-form-validator)
-[![Build Status](https://travis-ci.org/scriptex/html5-form-validator.svg?branch=master)](https://travis-ci.org/scriptex/html5-form-validator)
+[![Build Status](https://travis-ci.com/scriptex/html5-form-validator.svg?branch=master)](https://travis-ci.com/scriptex/html5-form-validator)
 [![npm](https://img.shields.io/npm/dt/html5-form-validator.svg)](https://www.npmjs.com/package/html5-form-validator)
 [![npm](https://img.shields.io/npm/v/html5-form-validator.svg)](https://www.npmjs.com/package/html5-form-validator)
 [![Analytics](https://ga-beacon.appspot.com/UA-83446952-1/github.com/scriptex/html5-form-validator/README.md)](https://github.com/scriptex/html5-form-validator/)
