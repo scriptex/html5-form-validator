@@ -24,8 +24,8 @@
 	},
 	"homepage": "https://github.com/scriptex/html5-form-validator#readme",
 	"devDependencies": {
-		"@babel/cli": "7.16.8",
-		"@babel/core": "7.16.12",
+		"@babel/cli": "7.17.0",
+		"@babel/core": "7.17.0",
 		"@babel/plugin-transform-modules-umd": "7.16.7",
 		"@babel/preset-env": "7.16.11",
 		"babel-loader": "8.2.3",
