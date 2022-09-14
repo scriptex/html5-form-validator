@@ -1,34 +1,34 @@
 {
 	"name": "html5-form-validator",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "The simplest HTML5 forms validator",
-	"main": "dist/index.js",
-	"scripts": {
-		"dist": "babel src/index.js --out-file dist/index.js",
-		"minify": "babel src/index.js --out-file dist/index.min.js --presets minify,@babel/env",
-		"build": "npm run dist && npm run minify"
+	"keywords": [
+		"HTML5 Validation",
+		"Form Validation",
+		"HTML5 Form Validation"
+	],
+	"homepage": "https://atanas.info/projects/html5-form-validator.html",
+	"bugs": {
+		"url": "https://github.com/scriptex/html5-form-validator/issues",
+		"email": "hi@atanas.info"
 	},
+	"license": "MIT",
+	"author": "Atanas Atanasov <hi@atanas.info> (https://atanas.info)",
+	"funding": "https://github.com/sponsors/scriptex",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/scriptex/html5-form-validator.git"
+		"url": "github:scriptex/html5-form-validator"
 	},
-	"keywords": [
-		"HTML5",
-		"form",
-		"validator"
-	],
-	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/scriptex/html5-form-validator/issues"
+	"scripts": {
+		"copy": "cp -rf dist demo",
+		"clean": "rm -rf dist && rm -rf demo/dist",
+		"build": "tsc --skipLibCheck",
+		"deploy": "yarn clean && yarn build && yarn copy"
 	},
-	"homepage": "https://github.com/scriptex/html5-form-validator#readme",
+	"dependencies": {},
 	"devDependencies": {
-		"@babel/cli": "7.18.10",
-		"@babel/core": "7.19.0",
-		"@babel/plugin-transform-modules-umd": "7.18.6",
-		"@babel/preset-env": "7.19.0",
-		"babel-loader": "8.2.5",
-		"babel-minify": "0.5.2"
+		"typescript": "4.8.3"
 	}
 }
