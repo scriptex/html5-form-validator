@@ -1,23 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
+	<head>
+		<meta charset="utf-8" />
 
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		/>
 
-  <title>HTML5 form validator</title>
-</head>
-<body>
-  <form>
-    <input type="number" value="" placeholder="Enter 42" min="42" max="42" required>
-    <input type="email" placeholder="Enter your email" required>
-    <button type="submit">Register</button>
-  </form>
+		<title>HTML5 Form Validator | The simplest HTML5 forms validator</title>
 
-  <script src="../dist/index.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css"
+		/>
 
-  <script>
-    new html5formValidation()
-  </script>
-</body>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			html,
+			body {
+				height: 100%;
+			}
+
+			body {
+				font-family: monospace;
+				text-align: center;
+				display: flex;
+				flex-flow: column nowrap;
+				align-items: center;
+				justify-content: center;
+				padding: 1rem;
+				margin: 0;
+			}
+
+			form {
+				max-width: 30rem;
+				margin: auto;
+			}
+
+			input,
+			button {
+				font-family: inherit;
+				font-size: 1rem;
+				line-height: 1.25;
+				color: inherit;
+				text-align: left;
+				width: 100%;
+				height: 2.625rem;
+				display: block;
+				padding: 1rem;
+				border: 1px solid;
+				background: #fff;
+				border-radius: 0.25rem;
+				box-shadow: none;
+			}
+
+			input:focus {
+				box-shadow: 0 0 0 1px #000 inset;
+				outline: 0 none;
+			}
+
+			button {
+				text-align: center;
+				padding: 0;
+				background: #ccc;
+				cursor: pointer;
+				appearance: none;
+			}
+
+			p {
+				margin-bottom: 3rem;
+			}
+
+			h1,
+			input,
+			button {
+				margin: 0 0 1rem;
+			}
+
+			social-links {
+				display: block;
+				padding-top: 2rem;
+			}
+
+			.error {
+				color: #f00;
+				margin: -0.5rem 0 1rem;
+			}
+
+			.invalid {
+				border-color: #f00;
+				background-color: #fff;
+			}
+
+			.invalid:focus {
+				box-shadow: 0 0 0 1px #f00 inset;
+			}
+		</style>
+
+		<script
+			src="https://unpkg.com/requirejs"
+			integrity="sha384-9M3Wd+wRkBqNHxK8F7Wg3Xs1Du/JXnCXgVdJ+G6KkYBvGol8vSgEiBdd8+MTaYtk"
+			crossorigin="anonymous"
+		></script>
+
+		<script
+			src="https://unpkg.com/scriptex-socials"
+			async
+			integrity="sha384-FDS8WECJvE4bGb+arLPh3DSv0mrVHD+hJRf+UaM6rVMT+wBleSgUlog90rrtgHH1"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<a
+			href="https://github.com/scriptex/AnimateMe"
+			title="See code on Github"
+			class="github-fork-ribbon"
+			data-ribbon="See code on Github"
+		>
+			See code on Github
+		</a>
+
+		<form>
+			<h1>HTML5 Form Validator</h1>
+
+			<p>The simplest HTML5 forms validator</p>
+
+			<input type="text" name="full name" placeholder="Enter your name" required />
+
+			<input type="email" placeholder="Enter your email" required />
+
+			<input type="number" value="" placeholder="Enter 42" min="42" max="42" required />
+
+			<button type="submit">Register</button>
+
+			<social-links></social-links>
+		</form>
+
+		<script>
+			requirejs(['./dist/index.js'], ({ HTML5FormValidation }) => {
+				new HTML5FormValidation();
+			});
+		</script>
+	</body>
 </html>
