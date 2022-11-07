@@ -1,13 +1,13 @@
 {
 	"name": "html5-form-validator",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "The simplest HTML5 forms validator",
 	"keywords": [
 		"HTML5 Validation",
 		"Form Validation",
 		"HTML5 Form Validation"
 	],
-	"homepage": "https://atanas.info/projects/html5-form-validator.html",
+	"homepage": "https://html5-form-validator.atanas.info",
 	"bugs": {
 		"url": "https://github.com/scriptex/html5-form-validator/issues",
 		"email": "hi@atanas.info"
